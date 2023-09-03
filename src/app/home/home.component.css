@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black !important;
+}
+
+ion-toolbar {
+  color: white !important;
+}
+
+ion-title {
+  color: white;
+  font-size: x-large;
+}
+
+ion-card {
+  width: 90%;
+  height: auto;
+  margin: 5%;
+  --background: #fff;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-card1 {
+  width: 100%;
+  height: 300px;
+}
+
+#image-card2 {
+  width: 100%;
+  height: 300px;
+}
+
+.card-header {
+  font-size: large;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: medium;
+  text-wrap: inherit;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 5%;
+}
+
+ion-button {
+  --background: red;
+  width: 150px;
+}
+
+.drawer-text {
+  color: white;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 20%;
+}
+
+.price-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.price-text {
+  font-size: x-large;
+  padding-right: 5%;
+  padding-top: 5%;
+}

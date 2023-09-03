@@ -1,1 +1,71 @@
-<p>home works!</p>
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-menu-toggle>
+      <p  class="drawer-text">HOME</p>
+    </ion-menu-toggle>
+    <!--    TODO ADD LOGOUT  SCREEN -->
+    <p (click)="logout()" class="drawer-text">LOGOUT</p>
+  </ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <div class="container">
+        <ion-title class="header-text">Menu</ion-title>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+    <div class="card-container">
+      <ion-card>
+        <img id="image-card1" alt="Silhouette of mountains" src="./assets/bg2.jpg"/>
+        <ion-card-header>
+          <ion-card-title class="card-header">Intermediate Trading Course</ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          Lorem ipsum dolre magna aliqua. Ut enim ad minim
+          Lorem ipsum dolre magna aliqua. Ut enim ad minim
+        </ion-card-content>
+        <div class="price-container">
+          <p class="price-text">₹3000</p>
+        </div>
+        <div class="button-container">
+          <ion-button (click)="course1()" class="btn-buy">
+            Buy
+          </ion-button>
+        </div>
+      </ion-card>
+
+      <ion-card>
+        <img id="image-card2" alt="Silhouette of mountains" src="./assets/bg3.jpg"/>
+        <ion-card-header>
+          <ion-card-title class="card-header">Intermediate Trading Course</ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          Lorem ipsum dolre magna aliqua. Ut enim ad minim
+          Lorem ipsum dolre magna aliqua. Ut enim ad minim
+        </ion-card-content>
+        <div class="price-container">
+          <p class="price-text">₹7000</p>
+        </div>
+        <div class="button-container">
+          <ion-button (click)="course2()" class="btn-buy">
+            Buy
+          </ion-button>
+        </div>
+      </ion-card>
+    </div>
+  </ion-content>
+</div>
+
+

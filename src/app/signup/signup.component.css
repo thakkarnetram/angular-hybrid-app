@@ -1,0 +1,58 @@
+/* styles.css */
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  width: 85%;
+}
+
+.custom-input {
+  background-color: #00de3a; /* Set the input background color to green */
+  border-radius: 10px; /* Add border-radius to round the input */
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding: 4px; /* Adjust the padding as needed */
+}
+
+ion-label {
+  color: white !important;
+  font-weight: bold;
+}
+
+ion-input {
+  font-size: 1.2rem;
+  color: white !important;
+  opacity: 1 !important;
+  background-color: transparent; /* Set the input background to transparent */
+  border: none; /* Remove the input border */
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-button {
+  padding-top: 5%;
+  --background: red;
+  --border-radius: 15px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
