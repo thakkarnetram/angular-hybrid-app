@@ -1,0 +1,15 @@
+.image-container1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50%;
+}
+
+.course-text{
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+  margin: 5%;
+  text-align: center;
+}

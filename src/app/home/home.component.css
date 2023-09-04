@@ -40,14 +40,16 @@ ion-card {
 }
 
 .card-header {
-  font-size: large;
-  padding: 10px;
+  font-size: x-large;
+  margin: 2.5%;
   font-weight: bold;
 }
 
 .card-text {
   font-size: medium;
   text-wrap: inherit;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .button-container {

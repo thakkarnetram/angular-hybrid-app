@@ -1,37 +1,49 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
-import {Store} from "@ngrx/store";
-import * as FormActions from "../store/actions/form.action"
-import {Form} from "../store/model/form.model"
 
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
-export class SignupComponent implements OnInit{
-  // formState$ = this.store.select((state: any) => state.form);
-  constructor(private router : Router ) {
-  }
-  ngOnInit(): void {
+export class SignupComponent implements OnInit {
+
+  // fake model
+  firstName: String = "";
+  lastName: String = "";
+  email: String = "";
+  password: String = "";
+
+  constructor(private router: Router) {
   }
 
-  // setFirstName(firstName:string){
-  //   this.store.dispatch(FormActions.setFirstName({firstName}));
-  // }
-  // setLastName(lastName:string){
-  //   this.store.dispatch(FormActions.setLastName({lastName}));
-  // }
-  //
-  // setEmail(email:string) {
-  //   this.store.dispatch(FormActions.setEmail({email}));
-  // }
-  //
-  // setPassword(password:string){
-  //   this.store.dispatch(FormActions.setPassword({password}))
-  // }
+  onSignup() {
+   fetch("http://192.168.1.2:4300/auth/api/v1/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        firstName: this.firstName,
+        lastName: this.lastName,
+        email: this.email,
+        password: this.password
+      })
+    }).then((res) => {
+      if(res.ok) {
+        this.router.navigate(['/home']).then(res => console.log(res))
+      }
+    }).catch((e)=>{
+      console.log("Error" , e)
+    })
+  }
 
-  register(){
-    this.router.navigate(['/home']).then(res => console.log(res))
+
+  ngOnInit() {
+  }
+
+
+  register() {
+
   }
 }

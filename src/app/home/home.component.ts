@@ -14,13 +14,13 @@ export class HomeComponent implements OnInit {
   }
 
   course1(){
-    this.router.navigate(["/course1"]).then((res) => {
+    this.router.navigate(["/purchased1"]).then((res) => {
       console.log(res);
     })
   }
 
   course2(){
-    this.router.navigate(["/course2"]).then((res) => {
+    this.router.navigate(["/purchased2"]).then((res) => {
       console.log(res);
     })
   }
